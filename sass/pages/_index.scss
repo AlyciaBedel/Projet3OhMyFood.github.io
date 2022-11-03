@@ -1,0 +1,189 @@
+.presentation {
+    padding: 60px 0 100px 0;
+    background-color: $colour-lightgrey;
+
+    h1 {
+        width: 400px;
+        font-size: 40px;
+        text-align: center;
+        margin: auto;
+    }
+
+    p {
+        font-size: 24px;
+        font-weight: 300;
+        width: 500px;
+        margin: auto;
+        text-align: center;
+        padding: 20px 0 40px 0;
+    }
+
+    .button__gradient {
+        display: block;
+        width: 300px;
+        padding: 20px 0;
+        margin: auto;
+        border-radius: 30px;
+        background: linear-gradient($colour-secondary, $colour-primary);
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        box-shadow: 0px 3px 8px grey;
+    }
+}
+
+.functioning {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+
+    h2 {
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        @media only screen and (min-width: 768px) {
+            flex-direction: row;
+            column-gap: 30px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    &__article {
+        display: flex;
+        align-items: center;
+    }
+
+    &__number {
+        width: 30px;
+        height: 30px;
+        background-color: $colour-primary;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        height: 90px;
+        border-radius: 20px;
+        padding-left: 40px;
+        margin-left: -15px;
+        background-color: $colour-lightgrey;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+
+        i {
+            margin-right: 20px;
+        }
+    }
+}
+
+.restaurants {
+    background-color: $colour-lightgrey;
+    padding: 80px 0;
+
+    h2 {
+        font-size: 30px;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    &__container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 30px;
+
+        @media only screen and (min-width: 768px) {
+            width: 98%;
+            flex-direction: row;
+            column-gap: 30px;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+
+        @media only screen and (min-width: 768px) {
+            width: 45%;
+            max-width: 1000px;
+        }
+    }
+
+    &__article {
+        margin: auto;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &__image {
+        width: 100%;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+        }
+
+        span {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: $colour-tertiary;
+            padding: 10px 20px;
+            color: $colour-darkgreen;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    &__description {
+        display: flex;
+        padding: 30px 20px;
+        justify-content: space-between;
+        align-items: center;
+
+        i {
+            font-size: 40px;
+            color: black;
+            padding-right: 20px;
+        }
+    }
+
+    &__text {
+        h3 {
+            font-weight: 600;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-weight: 300;
+        }
+    }
+
+}
