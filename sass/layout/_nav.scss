@@ -1,6 +1,5 @@
 .logoMenu {
-    display: flex;
-    justify-content: center;
+    @include flexcenter;
     padding: 25px;
 
     img {
@@ -9,15 +8,14 @@
 }
 
 .location {
-    display: flex;
-    justify-content: center;
+    @include flexcenter;
     padding: 25px 0;
-    background-color: $colour-darkgrey;
+    background-color: $colour-location;
     box-shadow: 0px 5px 5px lightgray inset;
 
     p {
-        font-size: 20px;
-        font-weight: 500;
+        font-size: nth($font-size, 1);
+        font-weight:nth($font-weight, 2);
         margin-left: 20px;
     }
 }
@@ -31,15 +29,14 @@
         width: 30px;
 
         i {
-            font-size: 40px;
-            color: black;
+            font-size: nth($font-size, 4);
+            color: $colour-black;
         }
     }
 
     &__logo {
         width: 100%;
-        display: flex;
-        justify-content: center;
+        @include flexcenter;
     }
 
     img {

@@ -59,7 +59,16 @@ footer {
   background-color: #353535;
   padding: 40px;
 }
-footer img {
+@media only screen and (min-width: 990px) {
+  footer {
+    padding: 40px 3%;
+  }
+}
+footer h4 {
+  color: white;
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-size: 400;
   padding-bottom: 20px;
 }
 footer .navigation {
@@ -70,7 +79,7 @@ footer .navigation {
 }
 footer .navigation li {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
 }
 footer .navigation a {
   text-decoration: none;
@@ -92,7 +101,7 @@ footer .navigation i {
 }
 .presentation p {
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 400;
   width: 500px;
   margin: auto;
   text-align: center;
@@ -109,7 +118,11 @@ footer .navigation i {
   text-align: center;
   color: white;
   font-size: 20px;
-  box-shadow: 0px 3px 8px grey;
+  box-shadow: 0px 4px 4px 2px #cfcece;
+}
+.presentation .button__gradient:hover {
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 0px 4px 4px 2px #9d9a9a;
 }
 
 .functioning {
@@ -126,7 +139,7 @@ footer .navigation i {
   flex-direction: column;
   row-gap: 30px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 990px) {
   .functioning__container {
     flex-direction: row;
     column-gap: 30px;
@@ -135,7 +148,7 @@ footer .navigation i {
 .functioning a {
   text-decoration: none;
   color: black;
-  font-size: 18px;
+  font-size: 20px;
   width: 100%;
 }
 .functioning__article {
@@ -156,16 +169,21 @@ footer .navigation i {
 .functioning__text {
   display: flex;
   align-items: center;
-  width: 90%;
+  width: 95%;
   height: 90px;
   border-radius: 20px;
   padding-left: 40px;
   margin-left: -15px;
   background-color: #f7f7f7;
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 5px 10px #cfcece;
 }
 .functioning__text i {
   margin-right: 20px;
+  opacity: 0.5;
+}
+.functioning__text p {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .restaurants {
@@ -186,7 +204,7 @@ footer .navigation i {
   justify-content: center;
   row-gap: 30px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 990px) {
   .restaurants__container {
     width: 98%;
     flex-direction: row;
@@ -198,7 +216,7 @@ footer .navigation i {
   text-decoration: none;
   color: black;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 990px) {
   .restaurants__link {
     width: 45%;
     max-width: 1000px;
@@ -208,7 +226,7 @@ footer .navigation i {
   margin: auto;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 5px 10px #cfcece;
 }
 .restaurants__image {
   width: 100%;
@@ -242,52 +260,57 @@ footer .navigation i {
   padding-right: 20px;
 }
 .restaurants__text h3 {
-  font-weight: 600;
+  font-weight: 500;
   padding-bottom: 5px;
 }
 .restaurants__text p {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .image-presentation {
   width: 100%;
   height: auto;
+  position: relative;
 }
 .image-presentation img {
   width: 100%;
-  height: 300px;
+  height: 400px;
   object-fit: cover;
 }
 
 .mainMenu {
   background-color: #f7f7f7;
+  margin-top: -60px;
+  z-index: 1000;
+  position: relative;
+  border-radius: 50px 50px 0 0;
 }
 @media only screen and (min-width: 990px) {
   .mainMenu {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 0 20px;
   }
 }
 
 .namerestaurants {
-  background-color: #f7f7f7;
-  border-radius: 50px 50px 0 0;
+  width: 90%;
+  margin: auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 20px 0;
 }
 @media only screen and (min-width: 990px) {
   .namerestaurants {
-    width: 100%;
+    width: 97%;
   }
 }
 .namerestaurants h1 {
   width: 75%;
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 500;
   justify-self: flex-start;
 }
@@ -346,7 +369,7 @@ footer .navigation i {
   color: black;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 5px 10px #cfcece;
 }
 .starter__container article,
 .main__container article,
@@ -419,7 +442,11 @@ footer .navigation i {
   text-align: center;
   color: white;
   font-size: 20px;
-  box-shadow: 0px 3px 8px grey;
+  box-shadow: 0px 3px 8px #cfcece;
+}
+.button__gradient:hover {
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 0px 3px 8px #9d9a9a;
 }
 
 /*# sourceMappingURL=style.css.map */

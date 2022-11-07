@@ -1,17 +1,17 @@
 .presentation {
     padding: 60px 0 100px 0;
-    background-color: $colour-lightgrey;
+    background-color: $colour-container;
 
     h1 {
         width: 400px;
-        font-size: 40px;
+        font-size: nth($font-size, 4);
         text-align: center;
         margin: auto;
     }
 
     p {
-        font-size: 24px;
-        font-weight: 300;
+        font-size: nth($font-size, 2);
+        font-weight: nth($font-weight, 1);
         width: 500px;
         margin: auto;
         text-align: center;
@@ -27,9 +27,14 @@
         background: linear-gradient($colour-secondary, $colour-primary);
         text-decoration: none;
         text-align: center;
-        color: white;
-        font-size: 20px;
-        box-shadow: 0px 3px 8px grey;
+        color: $colour-white;
+        font-size: nth($font-size, 1);
+        box-shadow: 0px 4px 4px 2px $colour-shadow;
+
+        &:hover {
+            background: linear-gradient(lighten($colour-secondary, 5%), lighten($colour-primary, 5%));
+            box-shadow: 0px 4px 4px 2px darken($colour-shadow, 20%);
+        }
     }
 }
 
@@ -39,7 +44,7 @@
     padding: 50px 0;
 
     h2 {
-        font-size: 30px;
+        font-size: nth($font-size, 3);
         padding-bottom: 30px;
     }
 
@@ -48,7 +53,7 @@
         flex-direction: column;
         row-gap: 30px;
 
-        @media only screen and (min-width: 768px) {
+        @include desktop {
             flex-direction: row;
             column-gap: 30px;
         }
@@ -56,8 +61,8 @@
 
     a {
         text-decoration: none;
-        color: black;
-        font-size: 18px;
+        color: $colour-black;
+        font-size: nth($font-size, 1);
         width: 100%;
     }
 
@@ -71,9 +76,8 @@
         height: 30px;
         background-color: $colour-primary;
         border-radius: 50%;
-        color: white;
-        display: flex;
-        justify-content: center;
+        color: $colour-white;
+        @include flexcenter;
         align-items: center;
         z-index: 1000;
     }
@@ -81,26 +85,32 @@
     &__text {
         display: flex;
         align-items: center;
-        width: 90%;
+        width: 95%;
         height: 90px;
         border-radius: 20px;
         padding-left: 40px;
         margin-left: -15px;
-        background-color: $colour-lightgrey;
-        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+        background-color: $colour-container;
+        box-shadow: 2px 5px 10px $colour-shadow;
 
         i {
             margin-right: 20px;
+            opacity: 0.5;
+        }
+
+        p {
+            font-size: nth($font-size, 1);
+            font-weight: nth($font-weight, 2);
         }
     }
 }
 
 .restaurants {
-    background-color: $colour-lightgrey;
+    background-color: $colour-container;
     padding: 80px 0;
 
     h2 {
-        font-size: 30px;
+        font-size: nth($font-size, 3);
         width: 90%;
         margin: auto;
         padding-bottom: 20px;
@@ -114,7 +124,7 @@
         justify-content: center;
         row-gap: 30px;
 
-        @media only screen and (min-width: 768px) {
+        @include desktop {
             width: 98%;
             flex-direction: row;
             column-gap: 30px;
@@ -124,9 +134,9 @@
 
     &__link {
         text-decoration: none;
-        color: black;
+        color: $colour-black;
 
-        @media only screen and (min-width: 768px) {
+        @include desktop {
             width: 45%;
             max-width: 1000px;
         }
@@ -134,9 +144,9 @@
 
     &__article {
         margin: auto;
-        background-color: white;
+        background-color: $colour-white;
         border-radius: 20px;
-        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 2px 5px 10px $colour-shadow;
     }
 
     &__image {
@@ -156,9 +166,9 @@
             right: 20px;
             background-color: $colour-tertiary;
             padding: 10px 20px;
-            color: $colour-darkgreen;
-            font-size: 20px;
-            font-weight: 500;
+            color: $colour-badge;
+            font-size: nth($font-size, 1);
+            font-weight: nth($font-weight, 2);
         }
     }
 
@@ -169,20 +179,20 @@
         align-items: center;
 
         i {
-            font-size: 40px;
-            color: black;
+            font-size: nth($font-size, 4);
+            color: $colour-black;
             padding-right: 20px;
         }
     }
 
     &__text {
         h3 {
-            font-weight: 600;
+            font-weight: nth($font-weight, 2);
             padding-bottom: 5px;
         }
 
         p {
-            font-weight: 300;
+            font-weight: nth($font-weight, 1);
         }
     }
 

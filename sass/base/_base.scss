@@ -5,3 +5,8 @@
     padding: 0;
     box-sizing: inherit;
 }
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: nth($font-size, 2);
+}
