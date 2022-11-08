@@ -1,0 +1,35 @@
+//AFFICHAGE DES MENUS
+@keyframes gradual-appearance {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+//BOUTON COEUR
+@keyframes heart-completed {
+    100% {
+        transform: translateX(-50%) translateY(-50%) scaleY(0);
+    }
+}
+
+@keyframes line-opacity {
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes heart-zoom {
+    50% {
+        transform: translateX(-50%) translateY(-50%) scale(1.2);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) scale(1.05);
+    }
+}

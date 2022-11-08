@@ -1,0 +1,18 @@
+.button__gradient {
+    display: block;
+    width: 300px;
+    padding: 20px 0;
+    margin: auto;
+    border-radius: 30px;
+    background: linear-gradient($colour-secondary, $colour-primary);
+    text-decoration: none;
+    text-align: center;
+    color: $colour-white;
+    font-size: nth($font-size, 1);
+    box-shadow: 0px 4px 4px 2px $colour-shadow;
+
+    &:hover {
+        background: linear-gradient(lighten($colour-secondary, 5%), lighten($colour-primary, 5%));
+        box-shadow: 0px 4px 4px 2px darken($colour-shadow, 20%);
+    }
+}

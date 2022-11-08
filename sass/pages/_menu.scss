@@ -63,7 +63,7 @@
 .dessert {
     width: 90%;
     margin: auto;
-
+    
     @include desktop {
         width: 30%;
     }
@@ -86,35 +86,58 @@
 
         a {
             width: 100%;
-            padding: 20px 0;
             text-decoration: none;
             color: $colour-black;
             background-color: $colour-white;
             border-radius: 20px;
             box-shadow: 2px 5px 10px $colour-shadow;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: gradual-appearance 1000ms forwards;
+
+            &:hover {
+                & .checkbox {
+                    margin-right: 0;
+                    transition: margin-right 800ms ease-out;
+                }
+
+                & .fa-circle-check {
+                    transform: rotate(360deg);
+                    transition: transform 600ms ease-in-out;
+                }
+            }
+
+            &.item-one {
+                animation-delay: 300ms;
+            }
+
+            &.item-two {
+                animation-delay: 600ms;
+            }
+
+            &.item-three {
+                animation-delay: 900ms;
+            }
+
+            &.item-four {
+                animation-delay: 1200ms;
+            }
         }
 
         article {
-            width: 95%;
+            width: 100%;
             margin: auto;
+            padding: 0 20px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-        }
-
-        &--price {
-            width: 20%;
-            max-width: 50px;
-            align-self: flex-end;
-            font-weight: nth($font-weight, 2);
-            font-size: nth($font-size, 1);
         }
     }
 
     &__description {
-
-        width: 80%;
-        max-width: 500px;
+        width: 70%;
+        max-width: 600px;
 
         h3 {
             font-size: nth($font-size, 2);
@@ -128,13 +151,48 @@
         p {
             font-size: nth($font-size, 1);
             font-weight: nth($font-weight, 1);
-            align-self: flex-end;
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
         }
     }
 
+    &__price {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        column-gap: 10px;
+        width: 30%;
+        max-width: 150px;
+        font-weight: nth($font-weight, 2);
+        font-size: nth($font-size, 1);
+        border-radius: 0 20px 20px 0;
+
+        p {
+            width: 35%;
+            max-width: 80px;
+            padding-bottom: 20px;
+        }
+
+        &--check {
+            width: 65%;
+            max-width: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90px;
+            background-color: $colour-tertiary;
+            margin-right: -160px;
+            padding-right: 20px;
+
+            i {
+                color: $colour-white;
+                font-size: nth($font-size, 3);
+                transform: rotate(0);
+                transition-duration: 1000ms;
+            }
+        }
+    }
 }
 
 .main,
@@ -148,23 +206,4 @@
 
 .button__container {
     padding: 50px 0;
-}
-
-.button__gradient {
-    display: block;
-    width: 300px;
-    padding: 20px 0;
-    margin: auto;
-    border-radius: 30px;
-    background: linear-gradient($colour-secondary, $colour-primary);
-    text-decoration: none;
-    text-align: center;
-    color: $colour-white;
-    font-size: nth($font-size, 1);
-    box-shadow: 0px 3px 8px $colour-shadow;
-
-    &:hover {
-        background: linear-gradient(lighten($colour-secondary, 5%), lighten($colour-primary, 5%));
-        box-shadow: 0px 3px 8px darken($colour-shadow, 20%);
-    }
 }

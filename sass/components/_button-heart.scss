@@ -1,0 +1,46 @@
+.heart__button {
+    width: 55px;
+    height: 50px;
+    position: relative;
+
+    &-item {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &-full {
+        color: transparent;
+        background-image: linear-gradient($colour-secondary, $colour-primary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        z-index: 0;
+    }
+
+    &-line {
+        z-index: 2;
+    }
+
+    &-hide {
+        width: 55px;
+        height: 50px;
+        transform-origin: top;
+        background-color: $colour-white;
+        z-index: 1;
+    }
+
+    &:hover {
+        & .heart__button-hide {
+            animation: heart-completed 1500ms ease-out forwards;
+        }
+
+        & .heart__button-line {
+            animation: line-opacity 900ms 700ms ease-in-out forwards;
+        }
+
+        & .heart__button-full {
+            animation: heart-zoom 700ms 1000ms ease-in-out forwards;
+        }
+    }
+}
