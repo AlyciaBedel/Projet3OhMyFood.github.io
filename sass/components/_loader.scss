@@ -1,0 +1,49 @@
+.loader {
+    position: fixed;
+    background-color: #1a183f;
+    width: 100%;
+    height: 100%;
+    @include flexcenter;
+    align-items: center;
+    z-index: 10000;
+    animation: loader-diseappear 1500ms 3000ms forwards;
+
+    &__container {
+        height: 350px;
+        width: 350px;
+        position: relative;
+        animation: rotate 1500ms infinite;
+
+        &-itemone {
+            width: 110px;
+            position: absolute;
+            top: 65px;
+            left: 65px;
+            animation: itemone 1500ms infinite;
+        }
+
+        &-itemtwo {
+            width: 80px;
+            position: absolute;
+            top: 70px;
+            right: 75px;
+            animation: itemtwo 1500ms infinite;
+        }
+
+        &-itemthree {
+            width: 110px;
+            position: absolute;
+            bottom: 65px;
+            right: 65px;
+            animation: itemthree 1500ms infinite;
+        }
+
+        &-itemfour {
+            width: 80px;
+            position: absolute;
+            bottom: 70px;
+            left: 75px;
+            animation: itemfour 1500ms infinite;
+        }
+    }
+}

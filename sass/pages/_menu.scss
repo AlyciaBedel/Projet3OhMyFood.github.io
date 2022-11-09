@@ -129,12 +129,17 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            padding-left: 20px;
         }
     }
 
     &__description {
         width: 80%;
-        padding: 0 20px;
+        flex-grow: 3;
+
+        @include desktop {
+            width: 65%;
+        }
 
         h3 {
             font-size: nth($font-size, 2);
@@ -158,16 +163,21 @@
         font-weight: nth($font-weight, 2);
         font-size: nth($font-size, 1);
         border-radius: 0 20px 20px 0;
+        display: flex;
+        align-self: flex-end;
+        padding-bottom: 17px;
+        flex-grow: 2;
+        width: 60px;
     }
 
     &__check {
         width: 90px;
         height: 90px;
-        display: flex;
-        justify-content: center;
+        @include flexcenter;
         align-items: center;
         background-color: $colour-tertiary;
-        margin-right: -200px;
+        margin-right: -130px;
+        flex-grow: 1;
 
         i {
             color: $colour-white;

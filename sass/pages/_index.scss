@@ -92,7 +92,7 @@
             & i {
                 color: $colour-primary;
                 opacity: 1;
-              }
+            }
         }
     }
 }
@@ -111,9 +111,8 @@
     &__container {
         width: 90%;
         margin: auto;
-        display: flex;
+        @include flexcenter;
         flex-direction: column;
-        justify-content: center;
         row-gap: 30px;
 
         @include desktop {

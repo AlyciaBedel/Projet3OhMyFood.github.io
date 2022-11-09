@@ -1,3 +1,38 @@
+@keyframes loader-diseappear {
+  80% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes itemone {
+  50% {
+    transform: translate(-30px, -30px) scale(0.3);
+  }
+}
+@keyframes itemtwo {
+  50% {
+    transform: translate(15px, -20px) scale(0.55);
+  }
+}
+@keyframes itemthree {
+  50% {
+    transform: translate(30px, 30px) scale(0.3);
+  }
+}
+@keyframes itemfour {
+  50% {
+    transform: translate(-15px, 20px) scale(0.55);
+  }
+}
 @keyframes gradual-appearance {
   from {
     transform: translateY(40px);
@@ -37,6 +72,52 @@
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 24px;
+}
+
+.loader {
+  position: fixed;
+  background-color: #1a183f;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  animation: loader-diseappear 1500ms 3000ms forwards;
+}
+.loader__container {
+  height: 350px;
+  width: 350px;
+  position: relative;
+  animation: rotate 1500ms infinite;
+}
+.loader__container-itemone {
+  width: 110px;
+  position: absolute;
+  top: 65px;
+  left: 65px;
+  animation: itemone 1500ms infinite;
+}
+.loader__container-itemtwo {
+  width: 80px;
+  position: absolute;
+  top: 70px;
+  right: 75px;
+  animation: itemtwo 1500ms infinite;
+}
+.loader__container-itemthree {
+  width: 110px;
+  position: absolute;
+  bottom: 65px;
+  right: 65px;
+  animation: itemthree 1500ms infinite;
+}
+.loader__container-itemfour {
+  width: 80px;
+  position: absolute;
+  bottom: 70px;
+  left: 75px;
+  animation: itemfour 1500ms infinite;
 }
 
 .button__gradient {
@@ -270,8 +351,8 @@ footer .navigation i {
   width: 90%;
   margin: auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   row-gap: 30px;
 }
 @media only screen and (min-width: 990px) {
@@ -481,12 +562,20 @@ footer .navigation i {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-left: 20px;
 }
 .starter__description,
 .main__description,
 .dessert__description {
   width: 80%;
-  padding: 0 20px;
+  flex-grow: 3;
+}
+@media only screen and (min-width: 990px) {
+  .starter__description,
+.main__description,
+.dessert__description {
+    width: 65%;
+  }
 }
 .starter__description h3,
 .main__description h3,
@@ -513,6 +602,11 @@ footer .navigation i {
   font-weight: 500;
   font-size: 20px;
   border-radius: 0 20px 20px 0;
+  display: flex;
+  align-self: flex-end;
+  padding-bottom: 17px;
+  flex-grow: 2;
+  width: 60px;
 }
 .starter__check,
 .main__check,
@@ -523,7 +617,8 @@ footer .navigation i {
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
-  margin-right: -200px;
+  margin-right: -130px;
+  flex-grow: 1;
 }
 .starter__check i,
 .main__check i,

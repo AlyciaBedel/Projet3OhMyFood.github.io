@@ -1,3 +1,46 @@
+//LOADER SPINNER
+@keyframes loader-diseappear {
+    80% {
+        opacity: 0;
+        transform: (scale(1));
+    }
+
+    100% {
+        opacity: 0;
+        transform: (scaleY(0));
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes itemone {
+    50% {
+        transform: translate(-30px, -30px) scale(0.3);
+    }
+}
+
+@keyframes itemtwo {
+    50% {
+        transform: translate(15px, -20px) scale(0.55);
+    }
+}
+
+@keyframes itemthree {
+    50% {
+        transform: translate(30px, 30px) scale(0.3);
+    }
+}
+
+@keyframes itemfour {
+    50% {
+        transform: translate(-15px, 20px) scale(0.55);
+    }
+}
+
 //AFFICHAGE DES MENUS
 @keyframes gradual-appearance {
     from {
