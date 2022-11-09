@@ -63,7 +63,7 @@
 .dessert {
     width: 90%;
     margin: auto;
-    
+
     @include desktop {
         width: 30%;
     }
@@ -126,18 +126,15 @@
         }
 
         article {
-            width: 100%;
-            margin: auto;
-            padding: 0 20px;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
         }
     }
 
     &__description {
-        width: 70%;
-        max-width: 600px;
+        width: 80%;
+        padding: 0 20px;
 
         h3 {
             font-size: nth($font-size, 2);
@@ -158,39 +155,25 @@
     }
 
     &__price {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        column-gap: 10px;
-        width: 30%;
-        max-width: 150px;
         font-weight: nth($font-weight, 2);
         font-size: nth($font-size, 1);
         border-radius: 0 20px 20px 0;
+    }
 
-        p {
-            width: 35%;
-            max-width: 80px;
-            padding-bottom: 20px;
-        }
+    &__check {
+        width: 90px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $colour-tertiary;
+        margin-right: -200px;
 
-        &--check {
-            width: 65%;
-            max-width: 90px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 90px;
-            background-color: $colour-tertiary;
-            margin-right: -160px;
-            padding-right: 20px;
-
-            i {
-                color: $colour-white;
-                font-size: nth($font-size, 3);
-                transform: rotate(0);
-                transition-duration: 1000ms;
-            }
+        i {
+            color: $colour-white;
+            font-size: nth($font-size, 3);
+            transform: rotate(0);
+            transition-duration: 1000ms;
         }
     }
 }

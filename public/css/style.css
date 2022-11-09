@@ -20,10 +20,10 @@
 }
 @keyframes heart-zoom {
   50% {
-    transform: translateX(-50%) translateY(-50%) scale(1.2);
+    transform: translateX(-50%) translateY(-50%) scale(1.1);
   }
   100% {
-    transform: translateX(-50%) translateY(-50%) scale(1.05);
+    transform: translateX(-50%) translateY(-50%) scale(1);
   }
 }
 *,
@@ -73,17 +73,12 @@ body {
   background-image: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
-  z-index: 0;
-}
-.heart__button-line {
-  z-index: 2;
 }
 .heart__button-hide {
   width: 55px;
   height: 50px;
   transform-origin: top;
   background-color: white;
-  z-index: 1;
 }
 .heart__button:hover .heart__button-hide {
   animation: heart-completed 1500ms ease-out forwards;
@@ -483,18 +478,15 @@ footer .navigation i {
 .starter__container article,
 .main__container article,
 .dessert__container article {
-  width: 100%;
-  margin: auto;
-  padding: 0 20px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .starter__description,
 .main__description,
 .dessert__description {
-  width: 70%;
-  max-width: 600px;
+  width: 80%;
+  padding: 0 20px;
 }
 .starter__description h3,
 .main__description h3,
@@ -518,39 +510,24 @@ footer .navigation i {
 .starter__price,
 .main__price,
 .dessert__price {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  column-gap: 10px;
-  width: 30%;
-  max-width: 150px;
   font-weight: 500;
   font-size: 20px;
   border-radius: 0 20px 20px 0;
 }
-.starter__price p,
-.main__price p,
-.dessert__price p {
-  width: 35%;
-  max-width: 80px;
-  padding-bottom: 20px;
-}
-.starter__price--check,
-.main__price--check,
-.dessert__price--check {
-  width: 65%;
-  max-width: 90px;
+.starter__check,
+.main__check,
+.dessert__check {
+  width: 90px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90px;
   background-color: #99E2D0;
-  margin-right: -160px;
-  padding-right: 20px;
+  margin-right: -200px;
 }
-.starter__price--check i,
-.main__price--check i,
-.dessert__price--check i {
+.starter__check i,
+.main__check i,
+.dessert__check i {
   color: white;
   font-size: 30px;
   transform: rotate(0);

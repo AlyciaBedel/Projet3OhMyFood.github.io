@@ -15,11 +15,6 @@
         background-image: linear-gradient($colour-secondary, $colour-primary);
         background-clip: text;
         -webkit-background-clip: text;
-        z-index: 0;
-    }
-
-    &-line {
-        z-index: 2;
     }
 
     &-hide {
@@ -27,7 +22,6 @@
         height: 50px;
         transform-origin: top;
         background-color: $colour-white;
-        z-index: 1;
     }
 
     &:hover {
