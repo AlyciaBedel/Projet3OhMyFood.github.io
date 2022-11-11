@@ -3,6 +3,8 @@ Troisième projet du parcours "Développeur web" chez OpenClassroom. L'objectif 
 
 #### Visualiser le site ici [https://alyciabedel.github.io/ohmyfood/]
 
+![screenshot](https://user-images.githubusercontent.com/98737248/201363460-4f94b6e7-ddb8-4d2d-ac4e-b8ab3afaf4cc.png)
+
 ## Qui est OhMyFood ?
 Ohmyfood! est une entreprise de commande de repas en ligne. Le concept est de permettre aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants partenaires car leur menu est préparé à l’avance. 
 
