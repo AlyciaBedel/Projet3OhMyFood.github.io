@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="OhMyFood! vous permet de composer votre propre menu et réduire votre temps d’attente dans les restaurants. Plus de perte de temps à consulter la carte">
+    <meta name="author" content="Alycia Bedel">
+    <title>Le Délice Des Sens</title>
+
+    <!-- Fichier normalize CSS -->
+    <link rel="stylesheet" href="../public/css/normalize.css">
+
+    <!-- Police Shrikhand & Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Fichier stylisation CSS -->
+    <link rel="stylesheet" href="../public/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- DEBUT HEADER -->
+    <header>
+
+        <!-- Logo -->
+        <div class="menu">
+
+            <!-- Flèche retour -->
+            <a href="../index.html" class="menu__arrow">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+            <!-- Logo -->
+            <div class="menu__logo">
+                <img src="../public/img/ohmyfood_logo.svg" alt="écriture en noir de ohmyfood servant de logo">
+            </div>
+
+        </div>
+
+        <!-- Présentation photo -->
+        <div class="image-presentation">
+            <img src="../public/img/restaurants/le_delice_des_sens.jpg"
+                alt="Plat composé d'un plat principal contenant du poisson blanc avec ses petits légumes">
+        </div>
+
+    </header>
+    <!-- FIN HEADER -->
+
+    <!-- DEBUT MAIN -->
+    <main class="mainMenu">
+
+        <!-- Nom restaurant -->
+        <div class="namerestaurants">
+            <h1>Le délice des sens</h1>
+
+            <!-- Bouton coeur -->
+            <div class="heart__button">
+                <i class="fa-solid fa-heart heart__button-item heart__button-full"></i>
+                <div class="heart__button-item heart__button-hide"></div>
+                <i class="fa-regular fa-heart heart__button-item heart__button-line"></i>
+            </div>
+        </div>
+
+        <!-- Section des entrées -->
+        <section class="starter">
+            <h2>Entrées</h2>
+            <hr>
+
+            <!-- Container pour flex -->
+            <div class="starter__container">
+
+                <!-- Entrée 1 -->
+                <a href="#" class="item-one">
+                    <article>
+
+                        <!-- Nom de l'entrée -->
+                        <div class="starter__description">
+                            <h3>Tartare de thon</h3>
+                            <p>Assaisonné au yuzu</p>
+                        </div>
+
+                        <!-- Prix -->
+                        <div class="starter__price">
+                            <p>25 €</p>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="starter__check checkbox">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Entrée 2 -->
+                <a href="#" class="item-two">
+                    <article>
+
+                        <!-- Nom de l'entrée -->
+                        <div class="starter__description">
+                            <h3>Bouchée de homard croustillant</h3>
+                            <p>Et sa farandole de petits légumes</p>
+                        </div>
+
+                        <!-- Prix -->
+                        <div class="starter__price">
+                            <p>35 €</p>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="starter__check checkbox">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Entrée 3 -->
+                <a href="#" class="item-three">
+                    <article>
+
+                        <!-- Nom de l'entrée -->
+                        <div class="starter__description">
+                            <h3>Velouté de cèpes </h3>
+                            <p>Aux truffes</p>
+                        </div>
+
+                        <!-- Prix -->
+                        <div class="starter__price">
+                            <p>20 €</p>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="starter__check checkbox">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </a>
+
+            </div>
+        </section>
+        <!-- Fin des entrées -->
+
+        <!-- Section des plats -->
+        <section class="main">
+            <h2>Plats</h2>
+            <hr>
+
+            <!-- Container pour flex -->
+            <div class="main__container">
+
+                <!-- Plat 1 -->
+                <a href="#" class="item-one">
+                    <article>
+
+                        <!-- Nom du plat -->
+                        <div class="main__description">
+                            <h3>Poulet rôti aux herbes de Provence</h3>
+                            <p>Et sa crème de truffe</p>
+                        </div>
+
+                        <!-- Prix -->
+                        <div class="starter__price">
+                            <p>40 €</p>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="starter__check checkbox">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Plat 2 -->
+                <a href="#" class="item-two">
+                    <article>
+
+                        <!-- Nom du plat -->
+                        <div class="main__description">
+                            <h3>Langouste rôtie</h3>
+                            <p>Et ses légumes de saison</p>
+                        </div>
+
+                        <!-- Prix -->
+                        <div class="starter__price">
+                            <p>35 €</p>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="starter__check checkbox">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Plat 3 -->
+                <a href="#" class="item-three">
+                    <article>
+
+                        <!-- Nom du plat -->
+                        <div class="main__description">
+                            <h3>Côte de boeuf Angus</h3>
+                            <p>Et sa purée de panais</p>
+                        </div>
+
+                        <!-- Prix -->
+                        <div class="starter__price">
+                            <p>44 €</p>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="starter__check checkbox">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </a>
+
+            </div>
+        </section>
+        <!-- Fin des plats -->
+
+        <!-- Section des desserts -->
+        <section class="dessert">
+            <h2>Desserts</h2>
+            <hr>
+
+            <!-- Container pour flex -->
+            <div class="dessert__container">
+
+                <!-- Dessert 1 -->
+                <a href="#" class="item-one">
+                    <article>
+
+                        <!-- Nom du dessert -->
+                        <div class="dessert__description">
+                            <h3>Farandole de desserts</h3>
+                            <p>Du chef</p>
+                        </div>
+
+                        <!-- Prix -->
+                        <div class="starter__price">
+                            <p>18 €</p>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="starter__check checkbox">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Dessert 2 -->
+                <a href="#" class="item-two">
+                    <article>
+
+                        <!-- Nom du dessert -->
+                        <div class="dessert__description">
+                            <h3>Crème brulée</h3>
+                            <p>Revisitée</p>
+                        </div>
+
+                        <!-- Prix -->
+                        <div class="starter__price">
+                            <p>22 €</p>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="starter__check checkbox">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Dessert 3 -->
+                <a href="#" class="item-three">
+                    <article>
+
+                        <!-- Nom du dessert -->
+                        <div class="dessert__description">
+                            <h3>Tiramisu</h3>
+                            <p>À la noisette</p>
+                        </div>
+
+                        <!-- Prix -->
+                        <div class="starter__price">
+                            <p>23 €</p>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="starter__check checkbox">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </a>
+
+            </div>
+        </section>
+        <!-- Fin des desserts -->
+
+        <!-- Bouton commander -->
+        <div class="button__container">
+            <a href="#" class="button__gradient">Commander</a>
+        </div>
+        <!-- Fin bouton commander -->
+
+    </main>
+    <!-- FIN MAIN -->
+
+    <!-- DEBUT FOOTER -->
+    <footer>
+
+        <!-- Logo -->
+        <h4>Ohmyfood</h4>
+
+        <!-- Lien de navigation -->
+        <ul class="navigation">
+            <li><a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a></li>
+            <li><a href="#"><i class="fa-solid fa-handshake"></i> Devenir partenaire</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="mailto:email@exemple.com">Contact</a></li>
+        </ul>
+
+    </footer>
+    <!-- FIN FOOTER -->
+
+</body>
+
+</html>
