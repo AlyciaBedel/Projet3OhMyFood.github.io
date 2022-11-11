@@ -1,3 +1,4 @@
+//NAVIGATION ACCUEIL
 .logoMenu {
     @include flexcenter;
     padding: 25px;
@@ -7,6 +8,7 @@
     }
 }
 
+//Localisation
 .location {
     @include flexcenter;
     padding: 25px 0;
@@ -20,11 +22,13 @@
     }
 }
 
+//NAVIGATION MENU DES RESTAURANTS
 .menu {
     display: flex;
     align-items: center;
     padding: 25px;
 
+    //Flèche
     &__arrow {
         width: 30px;
 
@@ -34,6 +38,7 @@
         }
     }
 
+    //Logo
     &__logo {
         width: 100%;
         @include flexcenter;

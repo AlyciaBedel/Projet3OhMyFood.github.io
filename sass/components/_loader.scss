@@ -1,3 +1,4 @@
+//LOADER SPINNER
 .loader {
     position: fixed;
     background-color: #1a183f;
@@ -8,12 +9,14 @@
     z-index: 10000;
     animation: loader-diseappear 1500ms 3000ms forwards;
 
+    //Container images
     &__container {
         height: 350px;
         width: 350px;
         position: relative;
         animation: rotate 1500ms infinite;
 
+        //Assiette 1
         &-itemone {
             width: 110px;
             position: absolute;
@@ -22,6 +25,7 @@
             animation: itemone 1500ms infinite;
         }
 
+        //Tasse 1
         &-itemtwo {
             width: 80px;
             position: absolute;
@@ -30,6 +34,7 @@
             animation: itemtwo 1500ms infinite;
         }
 
+        //Assiette 2
         &-itemthree {
             width: 110px;
             position: absolute;
@@ -38,6 +43,7 @@
             animation: itemthree 1500ms infinite;
         }
 
+        //Tasse 2
         &-itemfour {
             width: 80px;
             position: absolute;

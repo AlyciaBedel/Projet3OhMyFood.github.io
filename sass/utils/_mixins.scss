@@ -1,9 +1,11 @@
+//BREAKPOINT ORDINATEUR
 @mixin desktop {
     @media only screen and (min-width: 990px) {
         @content;
     }
 }
 
+//FLEX CENTER
 @mixin flexcenter {
     display: flex;
     justify-content: center;

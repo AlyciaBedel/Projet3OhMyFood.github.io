@@ -10,7 +10,7 @@ footer {
         color: $colour-white;
         font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
         font-size: nth($font-size, 3);
-        font-size: nth($font-weight, 1);
+        font-weight: nth($font-weight, 1);
         padding-bottom: 20px;
     }
 

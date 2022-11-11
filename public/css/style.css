@@ -70,6 +70,7 @@
 }
 
 body {
+  max-width: 1900px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 24px;
 }
@@ -159,7 +160,6 @@ body {
   width: 55px;
   height: 50px;
   transform-origin: top;
-  background-color: white;
 }
 .heart__button:hover .heart__button-hide {
   animation: heart-completed 1500ms ease-out forwards;
@@ -169,6 +169,14 @@ body {
 }
 .heart__button:hover .heart__button-full {
   animation: heart-zoom 700ms 1000ms ease-in-out forwards;
+}
+
+.restaurants__description .heart__button .heart__button-hide {
+  background-color: white;
+}
+
+.namerestaurants .heart__button .heart__button-hide {
+  background-color: #f7f7f7;
 }
 
 .logoMenu {
@@ -228,7 +236,7 @@ footer h4 {
   color: white;
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
   font-size: 30px;
-  font-size: 400;
+  font-weight: 400;
   padding-bottom: 20px;
 }
 footer .navigation {
@@ -469,10 +477,6 @@ footer .navigation i {
     width: 85%;
   }
 }
-.namerestaurants a {
-  text-decoration: none;
-  color: black;
-}
 .namerestaurants i {
   font-size: 40px;
 }
@@ -513,7 +517,6 @@ footer .navigation i {
 .starter__container a,
 .main__container a,
 .dessert__container a {
-  width: 100%;
   text-decoration: none;
   color: black;
   background-color: white;
@@ -559,23 +562,17 @@ footer .navigation i {
 .starter__container article,
 .main__container article,
 .dessert__container article {
+  height: 90px;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  padding-left: 20px;
 }
 .starter__description,
 .main__description,
 .dessert__description {
-  width: 80%;
-  flex-grow: 3;
-}
-@media only screen and (min-width: 990px) {
-  .starter__description,
-.main__description,
-.dessert__description {
-    width: 65%;
-  }
+  padding-left: 20px;
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .starter__description h3,
 .main__description h3,
@@ -599,26 +596,29 @@ footer .navigation i {
 .starter__price,
 .main__price,
 .dessert__price {
+  display: flex;
+  width: 50px;
+  height: 100%;
+  padding-right: 20px;
+}
+.starter__price p,
+.main__price p,
+.dessert__price p {
   font-weight: 500;
   font-size: 20px;
-  border-radius: 0 20px 20px 0;
-  display: flex;
   align-self: flex-end;
   padding-bottom: 17px;
-  flex-grow: 2;
-  width: 60px;
 }
 .starter__check,
 .main__check,
 .dessert__check {
-  width: 90px;
-  height: 90px;
+  background-color: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #99E2D0;
-  margin-right: -130px;
-  flex-grow: 1;
+  width: 80px;
+  height: 100%;
+  margin-right: -100px;
 }
 .starter__check i,
 .main__check i,

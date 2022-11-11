@@ -1,8 +1,10 @@
+//BOUTON COEUR 
 .heart__button {
     width: 55px;
     height: 50px;
     position: relative;
 
+    //Tout les éléments icon + div
     &-item {
         position: absolute;
         top: 50%;
@@ -10,6 +12,7 @@
         transform: translate(-50%, -50%);
     }
 
+    //Coeur rempli
     &-full {
         color: transparent;
         background-image: linear-gradient($colour-secondary, $colour-primary);
@@ -17,11 +20,11 @@
         -webkit-background-clip: text;
     }
 
+    //Div pour cacher
     &-hide {
         width: 55px;
         height: 50px;
         transform-origin: top;
-        background-color: $colour-white;
     }
 
     &:hover {
@@ -37,4 +40,14 @@
             animation: heart-zoom 700ms 1000ms ease-in-out forwards;
         }
     }
+}
+
+//COULEUR FOND PAGE ACCUEIL
+.restaurants__description .heart__button .heart__button-hide {
+    background-color: $colour-white;
+}
+
+//COULEUR FOND PAGE MENU
+.namerestaurants .heart__button .heart__button-hide {
+    background-color: $colour-container;
 }
