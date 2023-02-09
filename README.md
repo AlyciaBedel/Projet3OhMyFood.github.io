@@ -1,7 +1,7 @@
 # Projet 3: OhMyFood!
 Troisième projet du parcours "Développeur web" chez OpenClassroom. L'objectif est d'intégrer le site en front-end en dynamisant les pages avec des animations CSS, tout en utilisant le préprocesseur Sass.
 
-![html5-css3](https://user-images.githubusercontent.com/98737248/217797596-12efd51e-5a28-4003-94b5-17dafda69ec2.svg)
+![built-by-html5](https://user-images.githubusercontent.com/98737248/217798647-f9eef6f0-d0d6-40bb-aa13-477b3bcff196.svg) [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
 
 #### Visualiser le site ici [https://alyciabedel.github.io/ohmyfood/]
 
